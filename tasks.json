@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilador de C con allegro",
+            "command": "C:/w64devkit/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lallegro",
+                "-lallegro_acodec",
+                "-lallegro_audio",
+                "-lallegro_color",
+                "-lallegro_font",
+                "-lallegro_image",
+                "-lallegro_monolith",
+                "-lallegro_primitives",
+                "-lallegro_ttf",
+                "-lallegro_video"
+            ],
+            "options": {
+                "cwd": "C:/w64devkit/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
